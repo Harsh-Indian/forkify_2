@@ -1,6 +1,6 @@
 // A Seprate file for seprate recipe Views :
-// import icons from 'url:../img/icons.svg';
-import icons from 'url:../../img/icons.svg';
+// import icons from 'url:../img/icons';
+// import icons from 'url:../../img/icons';
 import View from './View.js';
 
 class RecipeView extends View {
@@ -66,14 +66,14 @@ class RecipeView extends View {
                 this._data.servings - 1
               }>
                 <svg>
-                  <use href="${icons}.svg#icon-minus-circle"></use>
+                  <use href="${icons}#icon-minus-circle"></use>
                 </svg>
               </button>
               <button class="btn--tiny btn--update-servings" data-update-to=${
                 this._data.servings + 1
               }>
                 <svg>
-                  <use href="${icons}.svg#icon-plus-circle"></use>
+                  <use href="${icons}#icon-plus-circle"></use>
                 </svg>
               </button>
             </div>
@@ -81,12 +81,12 @@ class RecipeView extends View {
 
           <div class="recipe__user-generated ${this._data.key ? '' : 'hidden'}">
             <svg>
-              <use href="${icons}.svg#icon-user"></use>
+              <use href="${icons}#icon-user"></use>
             </svg>
           </div>
           <button class="btn--round btn--bookmark">
             <svg class="">
-              <use href="${icons}.svg#icon-bookmark${
+              <use href="${icons}#icon-bookmark${
       this._data.bookmarked ? '-fill' : ''
     }"></use>
             </svg>
@@ -116,7 +116,7 @@ class RecipeView extends View {
           >
             <span>Directions</span>
             <svg class="search__icon">
-              <use href="${icons}.svg#icon-arrow-right"></use>
+              <use href="${icons}#icon-arrow-right"></use>
             </svg>
           </a>
         </div>
@@ -132,7 +132,7 @@ class RecipeView extends View {
     return `
             <li class="recipe__ingredient">
               <svg class="recipe__icon">
-                <use href="${icons}.svg#icon-check"></use>
+                <use href="${icons}#icon-check"></use>
               </svg>
               <div class="recipe__quantity">${quantity}</div>
               <div class="recipe__description">
