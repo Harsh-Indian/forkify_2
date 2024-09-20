@@ -1,6 +1,5 @@
 // A Seprate file for seprate recipe Views :
-// import icons from 'url:../img/icons';
-import icons from 'url:../../img/icons';
+import icons from 'url:../../img/icons.svg';
 import View from './View.js';
 
 class RecipeView extends View {
