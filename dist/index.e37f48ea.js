@@ -2257,7 +2257,7 @@ class RecipeView extends (0, _viewJsDefault.default) {
           </div>
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="${0, _iconsSvgDefault.default}.svg#icon-users"></use>
+              <use href="${0, _iconsSvgDefault.default}#icon-users"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--people">${this._data.servings}</span>
             <span class="recipe__info-text">servings</span>
